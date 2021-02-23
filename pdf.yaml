@@ -1,0 +1,38 @@
+---
+title: "`r pdftitle`"
+subtitle: "`r paste0('最終更新日時:',format(Sys.time(), '%Y-%m-%d %H:%M:%S %Z'))`"
+output:
+  pdf_document: 
+    latex_engine: xelatex 
+    number_sections: true
+    keep_tex: false
+    toc: true
+    toc_depth: 3
+    includes:
+      before_body: before_body.tex
+header-includes:
+  - \usepackage{longtable}
+  - \usepackage{array}
+  - \usepackage{multirow}
+  - \usepackage{wrapfig}
+  - \usepackage{float}
+  - \usepackage{colortbl}
+  - \usepackage{pdflscape}
+  - \usepackage{tabu}
+  - \usepackage{threeparttable}
+  - \usepackage{threeparttablex}
+  - \usepackage[normalem]{ulem}
+  - \usepackage{makecell}
+  - \usepackage{xcolor}
+  - \usepackage{booktabs}
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyfoot[CO,CE]{アセット･マネジメント･コンサルティング株式会社\quad https://am-consulting.co.jp\quad https://twitter.com/amc\_corporation}
+  - \fancyfoot[LE,RO]{\thepage}
+  - \setjamainfont{MS-Mincho}
+  - \setmainfont{MS-Mincho}
+documentclass: bxjsarticle
+classoption: "`r classoption`"   
+author: "アセット・マネジメント・コンサルティング株式会社 https://am-consulting.co.jp/"
+date: "Source `r sourcetxt`"
+---
